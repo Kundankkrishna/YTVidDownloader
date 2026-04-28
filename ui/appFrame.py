@@ -1,6 +1,6 @@
 import tkinter as tk
 import customtkinter as ctk
-from app.main import verify, yt_object_generator
+from app.main import verify, yt_object_generator,change_appearance_mode_event
 
 
 def set_env_appearance():
@@ -14,7 +14,7 @@ def appStructure():
     app = ctk.CTk()
     app.geometry("800x600")
     app.title("YTD")
-    app.iconbitmap("favicon.ico")
+    app.iconbitmap("ytd.ico")
 
     res = tk.StringVar()
 
@@ -30,6 +30,13 @@ def appStructure():
 
     btn_exit = ctk.CTkButton(master=app, text="Exit", width=70, corner_radius=10, fg_color="red", command=app.quit)
     btn_exit.grid(padx=10, pady=10, row=10, column=2)
+
+    lbl_theme = ctk.CTkLabel(app, text="Select theme")
+    lbl_theme.grid(row=5, column=0, padx=5, pady=2)
+
+    appearance_mode_optionmenu = ctk.CTkOptionMenu(app, values=["Light", "Dark", "System"],
+                                                   command=change_appearance_mode_event)
+    appearance_mode_optionmenu.grid(row=6, column=0, padx=20, pady=2)
 
     app.mainloop()
     return app

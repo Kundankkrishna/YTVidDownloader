@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48c34c62-9917-40cd-86b5-8b6244529892" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/appFrame.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/appFrame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ytd1.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/example.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ytd.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +23,17 @@
       <list>
         <option value="Python Script" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -32,7 +49,7 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2fgFYEqWNl71PgJKO4krrhQfWHv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -48,8 +65,11 @@
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;Python.scratch.executor&quot;: &quot;Run&quot;,
     &quot;Python.ytd.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ytd_main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Programming/Project/YTVidDownloader/app&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -57,7 +77,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;promo.django&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -72,12 +92,16 @@
       <recent name="D:\Programming\Project\YTVidDownloader\ui" />
       <recent name="C:\Users\kunda\AppData\Roaming\JetBrains\PyCharm2024.1\scratches" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programming\Project\YTVidDownloader\utils" />
+      <recent name="D:\Programming\Project\YTVidDownloader\ui" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PY-241.15989.155" />
-        <option value="bundled-python-sdk-babbdf50b680-7c6932dee5e4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.15989.155" />
+        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-PY-252.25557.178" />
+        <option value="bundled-python-sdk-ce6832f46686-7b97d883f26b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.25557.178" />
       </set>
     </attachedChunks>
   </component>
@@ -99,7 +123,28 @@
       <workItem from="1715798782225" duration="2173000" />
       <workItem from="1716230179308" duration="19150000" />
       <workItem from="1716565142556" duration="12649000" />
-      <workItem from="1716636407679" duration="6954000" />
+      <workItem from="1716636407679" duration="9298000" />
+      <workItem from="1716813974295" duration="116000" />
+      <workItem from="1716828157389" duration="81000" />
+      <workItem from="1717522667324" duration="6576000" />
+      <workItem from="1717848192421" duration="3273000" />
+      <workItem from="1718120342452" duration="1177000" />
+      <workItem from="1718125678475" duration="173000" />
+      <workItem from="1718127694301" duration="352000" />
+      <workItem from="1718131271179" duration="842000" />
+      <workItem from="1719144066968" duration="1253000" />
+      <workItem from="1719148916321" duration="8000" />
+      <workItem from="1719149627078" duration="18000" />
+      <workItem from="1719337920268" duration="666000" />
+      <workItem from="1719510095736" duration="119000" />
+      <workItem from="1750697008870" duration="58000" />
+      <workItem from="1754756055162" duration="2819000" />
+      <workItem from="1754816764409" duration="2263000" />
+      <workItem from="1754855814683" duration="302000" />
+      <workItem from="1755339609744" duration="339000" />
+      <workItem from="1755339997730" duration="4470000" />
+      <workItem from="1758728531034" duration="4478000" />
+      <workItem from="1758878660811" duration="34000" />
     </task>
     <servers />
   </component>
@@ -107,9 +152,11 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/YTVidDownloader$appFrame.coverage" NAME="appFrame Coverage Results" MODIFIED="1716637911251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ui" />
-    <SUITE FILE_PATH="coverage/YTVidDownloader$ytd.coverage" NAME="ytd Coverage Results" MODIFIED="1716641117414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/YTVidDownloader$example.coverage" NAME="example Coverage Results" MODIFIED="1716644874598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/YTVidDownloader$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1716640477889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
-    <SUITE FILE_PATH="coverage/YTVidDownloader$main.coverage" NAME="main Coverage Results" MODIFIED="1715714895329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/YTVidDownloader$ytd_main.coverage" NAME="ytd_main Coverage Results" MODIFIED="1755343576541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/YTVidDownloader$appFrame.coverage" NAME="appFrame Coverage Results" MODIFIED="1716643766073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ui" />
+    <SUITE FILE_PATH="coverage/YTVidDownloader$main.coverage" NAME="main Coverage Results" MODIFIED="1754765828349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/YTVidDownloader$ytd.coverage" NAME="ytd Coverage Results" MODIFIED="1718127715446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
   </component>
 </project>

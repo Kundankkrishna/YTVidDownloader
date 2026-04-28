@@ -1,10 +1,12 @@
 from pytube import YouTube
-import tkinter as tk
-import customtkinter as ctk
 from ui.appFrame import *
 
 
 app = appStructure()
+
+
+def change_appearance_mode_event(new_appearance_mode: str):
+    ctk.set_appearance_mode(new_appearance_mode)
 
 
 def download(obj, vid_res):
@@ -70,5 +72,3 @@ def verify(yt_obj):
     menu_options.set("Select Resolution")
     menu_options.bind("<Button>", select_event)
     menu_options.grid(padx=10, pady=10, row=4, column=1)
-
-
