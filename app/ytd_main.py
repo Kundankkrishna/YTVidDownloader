@@ -3,6 +3,9 @@ import tkinter as tk
 from tkinter import filedialog
 from PIL import Image
 import urllib.request
+from tkinter import filedialog
+from PIL import Image
+import urllib.request
 from pytube import YouTube
 
 
@@ -27,9 +30,12 @@ def download(obj, vid_res):
     try:
         file_name = dir_selector()
         print(file_name)
+        file_name = dir_selector()
+        print(file_name)
         print("Downloading Video...")
         lbl_download = ctk.CTkLabel(app, text="Downloading..")
         lbl_download.grid(row=6, column=1)
+        vid.download(filename=file_name)
         vid.download(filename=file_name)
         lbl_download.configure(text="Downloaded")
         print("Video Downloaded")
@@ -83,14 +89,37 @@ def verify(yt_obj):
     lbl_vid_name = ctk.CTkLabel(master=frm_details, text=f"Video Title: {yt_obj.title}", font=("Arial", 16, "bold"),
                                 wraplength=450)
     lbl_vid_name.grid(padx=5, pady=5)
+    details_dict.update({"title": yt_obj.title, "author": yt_obj.author, "length": yt_obj.length,
+                         "views": yt_obj.views})
+    print(details_dict)
 
+    thumb_url = yt_obj.thumbnail_url
+    thumbnail_file = "vid_thumbnail.png"
+
+    urllib.request.urlretrieve(thumb_url, thumbnail_file)
+    thumb_img = ctk.CTkImage(Image.open(thumbnail_file), size=(300, 225))
+
+    lbl_thumbnail = ctk.CTkLabel(frm_details, image=thumb_img, text="")
+    lbl_thumbnail.grid()
+
+    lbl_vid_name = ctk.CTkLabel(master=frm_details, text=f"Video Title: {yt_obj.title}", font=("Arial", 16, "bold"),
+                                wraplength=450)
+    lbl_vid_name.grid(padx=5, pady=5)
+
+    lbl_vid_author = ctk.CTkLabel(master=frm_details, text=f"Author: {yt_obj.author}", font=("Arial", 16))
+    lbl_vid_author.grid(padx=5, pady=5)
     lbl_vid_author = ctk.CTkLabel(master=frm_details, text=f"Author: {yt_obj.author}", font=("Arial", 16))
     lbl_vid_author.grid(padx=5, pady=5)
 
     lbl_vid_length = ctk.CTkLabel(master=frm_details, text=f"Length: {yt_obj.length//60} min {yt_obj.length % 60} sec",
                                   font=("Arial", 16))
     lbl_vid_length.grid(padx=5, pady=5)
+    lbl_vid_length = ctk.CTkLabel(master=frm_details, text=f"Length: {yt_obj.length//60} min {yt_obj.length % 60} sec",
+                                  font=("Arial", 16))
+    lbl_vid_length.grid(padx=5, pady=5)
 
+    lbl_vid_views = ctk.CTkLabel(master=frm_details, text=f"Views: {yt_obj.views}", font=("Arial", 16))
+    lbl_vid_views.grid(padx=5, pady=5)
     lbl_vid_views = ctk.CTkLabel(master=frm_details, text=f"Views: {yt_obj.views}", font=("Arial", 16))
     lbl_vid_views.grid(padx=5, pady=5)
 
@@ -105,9 +134,12 @@ def verify(yt_obj):
 
     return details_dict
 
+    return details_dict
+
 
 # create root app
 app = ctk.CTk()
+# app.geometry("800x600")
 # app.geometry("800x600")
 app.title("YTD")
 app.iconbitmap("ytd.ico")
@@ -126,6 +158,10 @@ btn_verify.grid(padx=10, pady=10, row=1, column=2)
 
 btn_exit = ctk.CTkButton(master=app, text="Exit", width=70, corner_radius=10, fg_color="red", command=app.quit)
 btn_exit.grid(padx=10, pady=10, row=10, column=2)
+
+menu_appearance_modes = ctk.CTkOptionMenu(app, values=["Light", "Dark", "System"], command=change_appearance_mode_event)
+menu_appearance_modes.set("System")
+menu_appearance_modes.grid(row=6, column=0, padx=20, pady=2)
 
 menu_appearance_modes = ctk.CTkOptionMenu(app, values=["Light", "Dark", "System"], command=change_appearance_mode_event)
 menu_appearance_modes.set("System")
